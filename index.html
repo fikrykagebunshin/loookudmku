@@ -1,0 +1,631 @@
+<!DOCTYPE html 1>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyline - segera HADIR </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body, html {
+      height: 50%;
+      background: url(Pemandangan.jpg) no-repeat center center/cover;
+    
+      color: rgb(241, 232, 232);
+      
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      border: 1px solid white;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+
+    nav {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .social {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .social a {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .h1 {
+      font-size: 80px;
+      font-weight: 700;
+      letter-spacing: 10px;
+      line-height: 1.2;
+      color: white
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      font-size: 18px;
+      letter-spacing: 3px;
+      color: white;
+    }
+
+    .decor-lines div {
+      position: absolute;
+      background: rgb(231, 227, 227);
+      height: 2px;
+      width: 30px;
+    }
+
+    /* Sample decorations (not full as in the image) */
+    .line1 { top: 10%; left: 20%; transform: rotate(45deg); }
+    .line2 { bottom: 15%; right: 25%; transform: rotate(-45deg); }
+    .line3 { top: 30%; right: 10%; transform: rotate(20deg); }
+    .line4 { bottom: 30%; left: 15%; transform: rotate(-20deg); }
+
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="logo">Skyline.</div>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Berlangganan</a>
+    </nav>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="subtitle">PEMBELAJARAN MPP</div>
+    <h1>FIKRY RIDUAN</h1>
+    <div class="footer-text">XI TJAT 1</div>
+
+  </div>
+  <div class="decor-lines">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
+  </div>
+</body>
+</html>
+
+
+
+2<!DOCTYPE html 1>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyline - segera HADIR </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="" crossorigin="anonymous"></script>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .hero {
+      background: url(LOS.jpg) no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      color: rgb(243, 242, 242);
+      display: flex;
+      align-items: center;
+      padding: 60px;
+    }
+
+    .content {
+      max-width: 500px;
+      
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background: #e40b0b;
+      color: rgb(15, 14, 14);
+      border-radius: 50%;
+      padding: 15px 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    h4 {
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      line-height: 1.1;
+      color: white;
+      
+
+    .price {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .price del {
+      color: #e4490c;
+      margin-left: 10px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #d4a026;
+    }
+
+    .btn {
+      background-color: #ece4e4;
+      color: rgb(226, 9, 9);
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #f7f1f1;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 30px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .badge {
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        padding: 10px 14px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="content">
+      <h1>Pengertian HTML</h1>
+      <div class="price">
+      </div>
+      <div class="description">
+        HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur dan konten halaman web. HTML digunakan untuk menentukan elemen-elemen seperti teks, gambar, video, tautan, dan elemen lain yang ditampilkan di halaman web. HTML menjadi dasar dari hampir semua situs web yang kita lihat di internet. 
+      </div>
+      <a href="#" class="btn">Go to product</a>
+    </div>
+  </div>
+</body>
+</html>
+
+3<!DOCTYPE html 1>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyline - segera HADIR </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: rgb(238, 231, 231);
+    }
+
+    .promo-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url(CSS.jpg) no-repeat center center/cover;
+      display: flex;
+      color: rgb(245, 240, 240);
+      align-items: center;
+      padding-left: 50px;
+    }
+
+    .promo-content {
+      max-width: 400px;
+
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .badge {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 10px 0;
+      line-height: 1.2;
+    }
+
+    .price {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+
+    .price del {
+      color: #ebe9e9;
+      margin-left: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-top: 15px;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .discount-circle {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background-color: #f5e7e7;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="promo-container">
+    <div class="promo-content">
+      <div class="title">Pengertian CSS</div>
+      <div class="description">
+        CSS, singkatan dari Cascading Style Sheets, adalah bahasa yang digunakan untuk menentukan tampilan dan format halaman web. CSS memungkinkan pengembang untuk mengatur berbagai aspek visual, seperti warna, jenis huruf, tata letak, dan elemen lainnya, untuk menciptakan tampilan yang menarik dan konsisten di berbagai perangkat. 
+      </div>
+      <a href="#" class="btn">Go to product</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+4<!DOCTYPE html 1>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyline - segera HADIR </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #131111;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .about-image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .about-text {
+      flex: 1 1 45%;
+    }
+
+    .about-text span {
+      color: #d4a026;
+      font-weight: bold;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #0a0a0a;
+      margin-bottom: 15px;
+    }
+
+    .about-text a {
+      color: #f13a3a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text {
+        flex: 1 1 100%;
+        color: #0a0a0a;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about-section">
+    <div class="about-image">
+      <img src="https://img.freepik.com/free-vector/online-document-concept-illustration_114360-4332.jpg" alt="Tablet Image">
+    </div>
+    <div class="about-text">
+      <h2>PERBEDAAN HTML dan CSS</h2>
+      <p>
+        HTML <a href="https://www.freepik.com" target="_blank">(HyperText Markup Language)</a>adalah bahasa markup yang digunakan untuk menyusun struktur dan konten halaman web.
+      </p>
+      <p>
+        CSS  <a href="https://www.freepik.com" target="_blank">(Cascading Style Sheets) </a>digunakan untuk mengatur tampilan dan gaya visual dari elemen-elemen pada halaman web tersebut. Singkatnya, HTML menentukan apa yang ada di halaman web, sementara CSS menentukan bagaimana tampilannya. 
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+    }
+
+<!DOCTYPE html 1>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyline - segera HADIR </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="" crossorigin="anonymous"></script>
+  <style>
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f70808;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 36px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto 50px auto;
+    }
+
+    .card {
+      background-color: rgb(240, 7, 7);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 200px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #030303;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #080808;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cara modern -->
+<div style="text-align: center;">
+  <h1>TERIMA KASIH </h1>
+</div>
+<p>Saya berterima kasih kepada yang telah membantu dalam pembuatan Website ini</p>
+
+</div>
+
+
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Bootstrap</h3>
+      <p>Ide Desain Website</p>
+    </div>
+    <div class="card">
+      <h3>ChatGPT</h3>
+      <p>Script Koding Website</p>
+    </div>
+    <div class="card">
+      <h3>Website Lainnya</h3>
+      <p>Isi Website</p>
+    </div>
+
+</body>
+</html>
+
+
+    }
+
+    <section class="content-section-5">
+    <video autoplay muted loop class="video-bg">
+      <source src="BS.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="overlay-5">
+      <h1>BLOOD STRIKE <br> </h1>
+      <p>Blood Strike adalah game first-person shooter (FPS) mobile yang dikembangkan oleh NetEase Games. Game ini cukup populer karena menggabungkan elemen battle royale dengan aksi tembak-menembak cepat dalam satu paket yang ringan dan bisa dimainkan di perangkat dengan spesifikasi menengah ke bawah.
+
+Penjelasan tentang Blood Strike:
+1. Genre dan Gaya Permainan
+Blood Strike adalah game FPS battle royale dengan pendekatan fast-paced (cepat dan intens), mirip dengan Call of Duty: Warzone. Pemain terjun ke medan perang dengan senjata pilihan mereka, mencari loot, dan bertahan hidup melawan tim lain sampai menjadi yang terakhir.
+
+2. Karakter dan Skill
+Game ini tidak hanya sekadar tembak-menembak, tetapi juga menghadirkan karakter unik (Operators) yang memiliki kemampuan khusus (skills), seperti menyembuhkan, menambah armor, atau memberikan buff pada rekan satu tim.
+
+3. Mode Permainan
+Blood Strike menawarkan beberapa mode permainan, termasuk:
+
+Battle Royale klasik: bertahan hidup di zona yang semakin menyempit.
+
+Deathmatch atau mode PvP cepat: tim vs tim dengan respawn cepat.
+
+Event Mode: mode khusus atau musiman dengan aturan berbeda.
+
+4. Grafis dan Kontrol
+Grafis ringan dan optimalisasi baik: bisa dimainkan dengan lancar di HP kentang (smartphone low-end).
+
+Kontrol intuitif: sistem kontrol disesuaikan untuk layar sentuh, termasuk auto-fire opsional, aim assist, dan tombol yang bisa dikustomisasi.
+
+5. Fitur Tambahan
+Kustomisasi senjata (loadout system)
+
+Skin karakter dan senjata
+
+Progression system (level, rank, dan reward harian)
+
+6. Kelebihan Blood Strike
+Ukuran kecil, cocok untuk banyak perangkat.
+
+Aksi cepat, cocok untuk sesi permainan singkat.
+
+Bisa dimainkan offline (beberapa mode tertentu).
+
+Komunitas aktif dan sering mendapat update.</p>
+      <div class="form-container">
+       
+        <button>About this game</button>
+      </div>
+    </div>
+  </section>
